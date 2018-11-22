@@ -1,6 +1,5 @@
 
 ###> symfony/framework-bundle ###
-/.env
 /public/bundles/
 /public/images/
 /public/media/
