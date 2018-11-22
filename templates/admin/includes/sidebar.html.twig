@@ -1,0 +1,41 @@
+<aside class="sidebar sidebar-icons-right sidebar-icons-boxed sidebar-expand-lg">
+    <header class="sidebar-header">
+        <a class="logo-icon" href=""><img src="" alt="Admin FSE icon"></a>
+        <span class="logo">
+          <a href=""><img src="" alt="Admin EIC logo"></a>
+        </span>
+        <span class="sidebar-toggle-fold"></span>
+    </header>
+
+    <nav class="sidebar-navigation">
+        {% if app.user|length > 0 %}
+            <div class="sidebar-profile">
+                <div class="dropdown">
+                    <span class="dropdown-toggle no-caret" data-toggle="dropdown"><img class="avatar" src="{{ asset('build/back/static/avatar/1.jpg', 'back') }}" alt="{{ app.user ? app.user.username : ''}}"></span>
+                    <div class="dropdown-menu open-top-center">
+                        <a class="dropdown-item" href="#"><i class="ti-user"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="ti-settings"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="ti-help"></i> Help</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{ path('security_logout') }}"><i class="ti-power-off"></i> {{ 'deconnexion'|capitalize }}</a>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h4>{{ app.user ? app.user.lastname|capitalize : ''}} {{ app.user ? app.user.firstname|capitalize : '' }}</h4>
+                    <p>{{ '{{ fonction }}' }}</p>
+                </div>
+            </div>
+        {% endif %}
+
+        <ul class="menu menu-lg menu-bordery">
+            <li class="menu-item active">
+                <a class="menu-link" href="">
+                    <span class="icon ti-home"></span>
+                    <span class="title">
+                        <span>{{ 'Dashboard'|upper }}</span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>

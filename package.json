@@ -1,0 +1,37 @@
+{
+    "name": "eic-admin",
+    "version": "0.1",
+    "description": "Admin plateform EIC",
+    "repository": "https://github.com/raphydev/eicLabs.git",
+    "author": "raphael Blehoue <raphaelsampan@gmail.com>",
+    "devDependencies": {
+        "@ckeditor/ckeditor5-adapter-ckfinder": "ckeditor/ckeditor5-adapter-ckfinder",
+        "@ckeditor/ckeditor5-alignment": "ckeditor/ckeditor5-alignment",
+        "@ckeditor/ckeditor5-autoformat": "ckeditor/ckeditor5-autoformat",
+        "@ckeditor/ckeditor5-basic-styles": "ckeditor/ckeditor5-basic-styles",
+        "@ckeditor/ckeditor5-block-quote": "ckeditor/ckeditor5-block-quote",
+        "@ckeditor/ckeditor5-build-classic": "ckeditor/ckeditor5-build-classic",
+        "@ckeditor/ckeditor5-easy-image": "ckeditor/ckeditor5-easy-image",
+        "@ckeditor/ckeditor5-editor-classic": "ckeditor/ckeditor5-editor-classic",
+        "@ckeditor/ckeditor5-essentials": "ckeditor/ckeditor5-essentials",
+        "@ckeditor/ckeditor5-heading": "ckeditor/ckeditor5-heading",
+        "@ckeditor/ckeditor5-image": "ckeditor/ckeditor5-image",
+        "@ckeditor/ckeditor5-link": "ckeditor/ckeditor5-link",
+        "@ckeditor/ckeditor5-list": "ckeditor/ckeditor5-list",
+        "@ckeditor/ckeditor5-paragraph": "ckeditor/ckeditor5-paragraph",
+        "@symfony/webpack-encore": "^0.22.0",
+        "copy-webpack-plugin": "^4.6.0",
+        "dropzone": "^5.5.1",
+        "node-sass": "^4.10.0",
+        "sass-loader": "^7.1.0",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "dev-server": "encore dev-server",
+        "dev": "encore dev",
+        "watch": "encore dev --watch",
+        "build": "encore production --progress"
+    }
+}
